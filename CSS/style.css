@@ -22,6 +22,22 @@ html {
     scroll-behavior: smooth;
 }
 
+#trailer {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 20px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 500ms ease;
+}
+
 /* NAV */
 nav {
     height: 120px;
@@ -98,6 +114,20 @@ nav {
     margin-bottom: 20px;
 }
 
+/* Ankers */
+
+#favorites {
+    scroll-margin-top: 120px;
+}
+
+#recommended {
+    scroll-margin-top: 120px;
+}
+
+#nieuw {
+    scroll-margin-top: 120px;
+}
+
 /* Header */
 
 header {
@@ -105,6 +135,7 @@ header {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     display: flex;
     justify-content: center;
@@ -361,6 +392,10 @@ footer div div {
     background-color: white;
 }
 
+.dark #trailer {
+    background-color: white;
+}
+
 @media all and (min-width: 640px){
 
     .hamburger{
@@ -415,11 +450,6 @@ footer div div {
         flex-direction: row;
         justify-content: space-between;
     }
-
-    .items:active .overlay {
-        opacity: 1;
-        left: 0;
-    }
 }
 
 @media all and (max-width: 900px) and (min-width: 640px){
@@ -435,4 +465,12 @@ footer div div {
     .SMD {
         flex-direction: column;
     }
+}
+
+@media (pointer: coarse) {
+    .items .overlay {
+        opacity: 1;
+        left: 0;
+    }
+    
 }

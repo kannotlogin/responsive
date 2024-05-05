@@ -32,3 +32,22 @@
 .dark {
     background-color: black;
 }
+  
+#trailer {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+    
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 500ms ease;
+    
+    display: grid;
+    place-items: center;
+}
