@@ -465,14 +465,7 @@ footer div div {
     .SMD {
         flex-direction: column;
     }
-}
 
-@media (pointer: coarse) {
-    .items .overlay {
-        opacity: 1;
-        left: 0;
-    }
-    
     #trailer {
         opacity: 0;
     }
@@ -483,5 +476,12 @@ footer div div {
         background-size: cover;
         background-position: center;
         background-attachment: scroll;
+    }
+}
+
+@media (pointer: coarse) {
+    .items .overlay {
+        opacity: 1;
+        left: 0;
     }
 }
