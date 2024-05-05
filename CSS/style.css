@@ -473,4 +473,15 @@ footer div div {
         left: 0;
     }
     
+    #trailer {
+        opacity: 0;
+    }
+
+    header {
+        background-image: url("../Assets/Header.webp");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
 }
