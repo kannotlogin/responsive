@@ -396,6 +396,11 @@ footer div div {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .items:active .overlay {
+        opacity: 1;
+        left: 0;
+    }
 }
 
 @media all and (max-width: 900px) and (min-width: 640px){
