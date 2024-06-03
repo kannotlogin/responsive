@@ -484,4 +484,8 @@ footer div div {
         opacity: 1;
         left: 0;
     }
+
+    #trailer {
+        opacity 0;
+    }
 }
